@@ -1,8 +1,8 @@
 package com.example.Service;
 
-import com.example.school.Api.ApiException;
-import com.example.school.Model.Teacher;
-import com.example.school.Repository.TeacherRepository;
+import com.example.Api.ApiException;
+import com.example.Model.Teacher;
+import com.example.Repository.TeacherRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

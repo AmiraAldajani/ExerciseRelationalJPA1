@@ -15,8 +15,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 public class Address {
-    //Id area street buildingNumber
-    //Id name age email salary
     @Id
     private Integer id;
 

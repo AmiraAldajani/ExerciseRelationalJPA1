@@ -40,9 +40,8 @@ public class Teacher {
     @Column(columnDefinition = "double not null")
     private Double salary;
 
-    // orphanRemoval: when teacher.setAddress(null) is saved, the address row gets deleted
     @OneToOne(cascade = CascadeType.ALL, mappedBy = "teacher", orphanRemoval = true)
-    @PrimaryKeyJoinColumn // two tables 1 ID
+    @PrimaryKeyJoinColumn
     private Address address;
 
 }

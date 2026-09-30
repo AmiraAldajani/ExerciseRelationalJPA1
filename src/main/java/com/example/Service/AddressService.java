@@ -1,10 +1,10 @@
 package com.example.Service;
-import com.example.school.Api.ApiException;
-import com.example.school.DTO.AddressDTO;
-import com.example.school.Model.Address;
-import com.example.school.Model.Teacher;
-import com.example.school.Repository.AddressRepository;
-import com.example.school.Repository.TeacherRepository;
+import com.example.Api.ApiException;
+import com.example.DTO.AddressDTO;
+import com.example.Model.Address;
+import com.example.Model.Teacher;
+import com.example.Repository.AddressRepository;
+import com.example.Repository.TeacherRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +29,6 @@ public class AddressService {
         addressRepository.save(address);
     }
 
-    // address id = teacher id (two tables 1 ID)
     public void updateAddress(AddressDTO addressDTO){
         Address address = addressRepository.findAddressById(addressDTO.getTeacher_id());
         if (address == null)
