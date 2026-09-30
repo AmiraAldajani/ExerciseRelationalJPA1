@@ -35,7 +35,7 @@ public class TeacherService {
         teacherRepository.save(old);
     }
 
-
+//he4e4
     public void deleteTeacher(Integer id) {
         Teacher teacher = teacherRepository.findTeacherById(id);
         if (teacher == null)
