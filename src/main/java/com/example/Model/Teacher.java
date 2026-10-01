@@ -20,7 +20,7 @@ public class Teacher {
     @NotNull(message = "Enter an ID")
     //generate
     private Integer id;
-
+// Leave column here. and move the rest to DTO
     @NotEmpty(message = "Name cant be null")
     @Size(min = 3, max = 20, message = "Name must be between 3 and 20 characters")
     @Column(columnDefinition = "varchar(20) not null")
