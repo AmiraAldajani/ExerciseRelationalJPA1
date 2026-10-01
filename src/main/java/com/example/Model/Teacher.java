@@ -18,6 +18,7 @@ public class Teacher {
 
     @Id
     @NotNull(message = "Enter an ID")
+    //generate
     private Integer id;
 
     @NotEmpty(message = "Name cant be null")
@@ -40,7 +41,7 @@ public class Teacher {
     @Column(columnDefinition = "double not null")
     private Double salary;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "teacher", orphanRemoval = true)
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "teacher")
     @PrimaryKeyJoinColumn
     private Address address;
 
